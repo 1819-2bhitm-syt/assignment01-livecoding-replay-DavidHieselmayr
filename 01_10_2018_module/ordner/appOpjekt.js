@@ -7,7 +7,8 @@ hallo(welt);
 console.log(welt);
 
 let halloObject = function (obj) {
-    obj.name = "Hallo" + obj.name;
+    //obj.name = "Hallo" + obj.name;
+    obj = null;
 };
 let o ={
     name:"Welt"
