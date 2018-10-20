@@ -5,22 +5,20 @@ const circle = {
 };
 
 // To create multiple object with the same structure and behaviour (methods),
-// use a factory or a constructor 
+// use a factory or a constructor
 
-// Factory function 
+// Factory function
 function createCircle(radius) {
     return{
         radius,
-        draw:function () {
-            
-        }
+        draw:function () {}
     }
 }
 
-// Constructor Function 
+// Constructor Function
 function Circle(radius) {
     this.radius = radius;
     this.draw = function () {
-        
+
     }
 }
