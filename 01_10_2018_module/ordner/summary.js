@@ -1,24 +1,21 @@
-// The simplest way to create an object is using an object literal
-const circle = {
-    radius: 1,
-    draw:function () {}
-};
+// Every object has a "constructor" property which returns the function
+// that was used to construct or create that object
+const x = {}
+x.constructor;
 
-// To create multiple object with the same structure and behaviour (methods),
-// use a factory or a constructor
+// In JavaScript, functions are objects. They have properties and methods.
+Circle.name;
+Circle.length;
+Circle.constructor; // returns Function()
+Circle.call({},1);  // to call the Circle function
+Circle.apply({}[1]);
 
-// Factory function
-function createCircle(radius) {
-    return{
-        radius,
-        draw:function () {}
-    }
-}
+// Value types are copied by their value, reference types are copied by their reference.
+// Value types in JavaScript are: String, Number, Boolean, Symbol, undefined and null
+// Reference types are: Object, Function and Array
 
-// Constructor Function
-function Circle(radius) {
-    this.radius = radius;
-    this.draw = function () {
+// JavaScript objects are dynamic. You can add/remove properties:
+circle.location={};
+circle['location'] = {};
 
-    }
-}
+delete circle.location;
