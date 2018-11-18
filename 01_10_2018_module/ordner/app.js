@@ -7,4 +7,9 @@ Person.prototype.getName = function (){
 };
 
 let hans = new Person("Hans", "Müller");
-console.log(hans.getName());
+let p = {
+    vorname: "Erik",
+    nachname:"Müller"
+};
+
+console.log(p);
