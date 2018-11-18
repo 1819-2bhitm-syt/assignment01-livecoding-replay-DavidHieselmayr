@@ -11,5 +11,5 @@ let p = {
     vorname: "Erik",
     nachname:"Müller"
 };
-
+p.__proto__ = Person.prototype;
 console.log(p);
