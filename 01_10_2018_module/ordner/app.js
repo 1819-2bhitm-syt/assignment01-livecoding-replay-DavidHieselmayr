@@ -12,4 +12,4 @@ let p = {
     nachname:"Müller"
 };
 p.__proto__ = Person.prototype;
-console.log(p);
+console.log(p.getName());
