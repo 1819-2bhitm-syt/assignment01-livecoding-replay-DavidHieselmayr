@@ -6,10 +6,11 @@ Person.prototype.getName = function (){
     return this.vorname + " " + this.nachname
 };
 
-let hans = new Person("Hans", "Müller");
-let p = {
-    vorname: "Erik",
-    nachname:"Müller"
-};
-p.__proto__ = Person.prototype;
-console.log(p.getName());
+function Schueler(vorname,nachname,schule){
+    this.vorname = vorname;
+    this.nachname = nachname;
+    this.schule = schule;
+}
+
+let erik = new Schueler("Erik" , "Müller" , "HTL Leonding");
+console.log(erik);
