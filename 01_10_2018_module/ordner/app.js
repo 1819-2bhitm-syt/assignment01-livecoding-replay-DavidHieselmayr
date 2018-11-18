@@ -3,7 +3,7 @@ function Person(vorname,nachname) {
     this.nachname = nachname;
 }
 Person.prototype.getName = function (){
-    return this.vorname + " " + this.nachname
+    return this.vorname + " " + this.nachname;
 };
 
 function Schueler(vorname,nachname,schule){
@@ -13,4 +13,4 @@ function Schueler(vorname,nachname,schule){
 }
 
 let erik = new Schueler("Erik" , "Müller" , "HTL Leonding");
-console.log(erik);
+console.log(erik.getName());
