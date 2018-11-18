@@ -13,5 +13,9 @@ function Schueler(vorname,nachname,schule){
 }
 Schueler.prototype.__proto__= Person.prototype;
 
+Schueler.prototype.getName = function(){
+    return this.vorname + " " + this.nachname +" (" + this.schule+ ")";
+};
+
 let erik = new Schueler("Erik" , "Müller" , "HTL Leonding");
 console.log(erik.getName());
